@@ -1,0 +1,32 @@
+{
+  "version": "0.1.0",
+  "command": "npm",
+  "isShellCommand": true,
+  "args": ["run"],
+  "showOutput": "always",
+  "tasks": [
+    {
+      "taskName": "start"
+    },
+    {
+      "taskName": "build",
+      "isBuildCommand": true
+    },
+    {
+      "taskName": "watch"
+    },
+    {
+      "taskName": "test:spec",
+      "isTestCommand": true
+    },
+    {
+      "taskName": "test:spec:coverage"
+    },
+    {
+      "taskName": "test:lint"
+    },
+    {
+      "taskName": "clean"
+    }
+  ]
+}

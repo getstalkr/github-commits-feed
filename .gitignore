@@ -1,0 +1,9 @@
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+
+build/
+coverage/
+node_modules/
+npm-debug.log
+.nyc_output

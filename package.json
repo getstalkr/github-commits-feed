@@ -15,9 +15,9 @@
   "typings": "lib/index.d.ts",
   "scripts": {
     "start": "node .",
-    "build": "node tasks/build",
-    "watch": "node tasks/build --watch",
-    "test:spec": "npm run build && mocha --compilers ts:ts-node/register --recursive 'test/**/*-spec.ts'",
+    "build": "node tasks/bundle",
+    "watch": "node tasks/bundle --watch",
+    "test:spec": "yarn build && mocha --compilers ts:ts-node/register --recursive 'test/**/*-spec.ts'",
     "test:spec:coverage": "nyc --reporter=text --reporter=html --reporter=lcov mocha --compilers ts:ts-node/register",
     "test:lint": "tslint --force --format verbose \"src/**/*.ts\"",
     "clean": "rimraf lib"

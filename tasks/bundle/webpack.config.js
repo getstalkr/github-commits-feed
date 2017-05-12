@@ -39,10 +39,13 @@ const config = {
         exclude: /node_modules/,
         use: ['source-map-loader']
       },
-      // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
+      // All files with a '.ts' extension will be handled by 'awesome-typescript-loader'.
       {
         test: /\.ts?$/,
-        loader: "awesome-typescript-loader"
+        loader: "awesome-typescript-loader",
+        options: {
+          transpileOnly: false
+        }
       },
     ]
   },

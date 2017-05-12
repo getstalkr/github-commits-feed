@@ -10,10 +10,11 @@ const log = console.log
 const watchFlag = argv.watch
 
 if (watchFlag) {
+
   let runner
   const run = () => nodemon({
     execMap: { js: 'node' },
-    script: path.join(__dirname, '../bundle/index.js'),
+    script: path.join(__dirname, '../../index.js'),
     ignore: ['*'],
     watch: ['nothing/'],
     ext: 'noop'

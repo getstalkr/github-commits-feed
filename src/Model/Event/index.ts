@@ -1,9 +1,9 @@
-import { User, Commit } from './Github'
+import { Commit, User } from "./Github";
 
 export class Event {
 
-    author: User;
-    commit: Commit;
+    private author: User;
+    private commit: Commit;
 
     constructor(from: User, content: Commit) {
         this.author = from;

@@ -1,17 +1,17 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
     "declaration": true,
     "sourceMap": true,
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
-    "outDir": "./lib",
+    "rootDir": "./src",
+    "outDir": "./dist",
     "preserveConstEnums": true,
     "removeComments": true,
     "target": "es5",
-    "typeRoots": [
-      "./node_modules/@types"
-    ]
+    "typeRoots": ["./node_modules/@types"]
   },
   "include": [
     "src/**/*"

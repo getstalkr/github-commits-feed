@@ -14,7 +14,7 @@ if (watchFlag) {
   let runner
   const run = () => nodemon({
     execMap: { js: 'node' },
-    script: path.join(__dirname, '../../index.js'),
+    script: path.join(__dirname, '../../dist/index.js'),
     ignore: ['*'],
     watch: ['nothing/'],
     ext: 'noop'

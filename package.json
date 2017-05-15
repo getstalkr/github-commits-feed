@@ -23,7 +23,7 @@
     "code:test:lint": "tslint --force --format verbose \"src/**/*.ts\"",
     "docs:code": "typedoc --out dist/docs",
     "docs:TOC": "markdown-toc README.md -i",
-    "docs:TOC:watch": "onchange 'README.md' -- npm run generate:main",
+    "docs:TOC:watch": "onchange 'README.md' -- npm run docs:TOC",
     "all:watch": "run-p code:watch docs:TOC:watch",
     "clean": "rimraf lib"
   },

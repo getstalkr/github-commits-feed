@@ -34,6 +34,21 @@
 
 <!-- toc -->
 
+- [What](#what)
+  * [Our Product](#our-product)
+  * [How it Works](#how-it-works)
+    + [Architectural Overview](#architectural-overview)
+      - [The Registry](#the-registry)
+      - [The CLI](#the-cli)
+      - [Clients](#clients)
+        * [Smart TVs](#smart-tvs)
+      - [The Cloud](#the-cloud)
+      - [PaaS/BaaS/FaaS](#paasbaasfaas)
+- [Usage](#usage)
+  * [Client](#client)
+  * [Server](#server)
+    + [Locally](#locally)
+
 <!-- tocstop -->
 
 ## What
@@ -116,9 +131,19 @@ The *stalkr* **Cloud** is *PaaS* which behaves as one our revenue streams and he
 
 **Teams** give organizations the ability to create groups of members and control access to projects. Team members can be granted read, write, or admin permissions to specific projects.
 
+##### PaaS/BaaS/FaaS
+
+Those are the services where you any stalkr micro service–such as the one whose documentation you're reading.
+
+More information on these topics can be found at [Server](#server).
+
 ## Usage
 
-### Getting Started
+### Client
+
+### Server
+
+#### Locally
 
 1. Make sure you define the `ENV` variables below:
 

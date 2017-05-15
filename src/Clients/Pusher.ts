@@ -37,7 +37,7 @@ export class PusherClient {
       this.client.trigger(this.channel, "push", payload, null,
         (err: Error, req: IncomingMessage, res: ServerResponse) => {
           if (err) { return reject(err); }
-          resolve(event);
+          resolve(payload);
         },
       );
     });

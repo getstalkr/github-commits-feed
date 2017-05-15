@@ -29,13 +29,13 @@ export class Server {
             new Commit(id, tree_id, message, timestamp),
           );
 
-          this.pusherClient.publish(
-            `${process.env.STALKR_PROJECT}@${process.env.STALKR_TEAM}`,
-            "push",
-            event,
-          );
-
-          return "Sent";
+          this.pusherClient.publish(event)
+            .then((details) => {
+              send(res, 200, { received: details });
+            })
+            .catch((err) => {
+              send(res, 500, { error: err });
+            });
         },
       );
     }

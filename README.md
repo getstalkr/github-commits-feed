@@ -41,7 +41,7 @@
 ### Our Product
 
 <p align="center">
-	<img src="docs/images/logo.png" alt="stalkr Logo">
+	<img src="docs/images/logo.png" alt="stalkr Logo" width="650px">
 </p>
 
 *stalkr* is a simple–yet powerful–set of tools which gathers data from both continuous integration and application infrastructure monitoring tools in order to make it easier to monitor the whole developing process, in a way the entire team can see at a glance, from the very first commit to the final release.
@@ -65,6 +65,34 @@ If you can't wait to check it out:
     <img alt="Download on the App Store" src="docs/images/badge.png" width="150px">
   </a>
 </p>
+
+### How it Works
+
+#### Architectural Overview
+
+> easy peasy lemon squeezy!
+
+<p align="center">
+  <a href="https://itunes.apple.com/br/app/.../...">
+    <img alt="Download on the App Store" src="docs/images/stack-overview.png" width="900px">
+  </a>
+</p>
+
+##### The Registry
+
+> Coming soon.
+
+Use the *stalkr* **Package Catalog**/Registry to quickly and easily find open-source packages to speed your development.
+
+It basically discovers all the available *stalkr* plugins in popular back-end registries out there–e.g. *[node.js](https://nodejs.org/en/)-based* plugins available [npmjs.com](https://www.npmjs.com/) registry can be discovered if they contain `stalkr-plugin` value in `keywords` field of `package.json`.
+
+##### The CLI
+
+> Coming soon.
+
+Use the *stalkr* **CLI** to quickly bootstrap and deploy your packages right from your terminal.
+
+It basically works as an abstraction layer over commom CLI tools used to get a *stalkr* package up and running.
 
 ## Usage
 
@@ -110,4 +138,4 @@ If you can't wait to check it out:
     yarn start
     ```
 
-If everything goes okay, it should now be running at `localhost:3000`.
+If everything goes okay, it should now be running at [`localhost:3000`](http://localhost:3000).

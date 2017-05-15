@@ -212,3 +212,11 @@ If everything goes okay, it should now be running at [`localhost:3000`](http://l
            STALKR_TEAM='myTeam' \
            STALKR_PROJECT='myProject'
     ```
+
+---
+
+**Maintainer**:
+
+> [ythecombinator.me](https://ythecombinator.me) &nbsp;&middot;&nbsp;
+> GitHub [@ythecombinator](https://github.com/ythecombinator) &nbsp;&middot;&nbsp;
+> Twitter [@ythecombinator](https://twitter.com/ythecombinator)

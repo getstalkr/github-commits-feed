@@ -1,5 +1,5 @@
 <h1 align="center">
-	<img src="logo.png" alt="stalkr | GitHub | Commits Feed">
+	<img src="docs/images/banner.png" alt="stalkr | GitHub | Commits Feed">
 	<br>
 	<br>
 </h1>
@@ -36,7 +36,39 @@
 
 <!-- tocstop -->
 
-## Getting Started
+## What
+
+### Our Product
+
+<p align="center">
+	<img src="docs/images/logo.png" alt="stalkr Logo">
+</p>
+
+*stalkr* is a simple–yet powerful–set of tools which gathers data from both continuous integration and application infrastructure monitoring tools in order to make it easier to monitor the whole developing process, in a way the entire team can see at a glance, from the very first commit to the final release.
+
+Although our experimental release is a simple client made for the  TV, we do intend to make *stalkr* clients available on as much platforms as possible, which include:
+
+- Other **Smart TV** platforms–e.g. Android TV, webOS, Tizen etc.;
+
+- **SmartWatch** platforms–e.g. watchOS, Android Wear etc.;
+
+- Popular **Mobile** platforms–e.g. iOS, Android etc.;
+
+- Popular **Desktop** OSs–e.g. macOS, Linux, Windows etc.;
+
+- The **Web** itself.
+
+If you can't wait to check it out:
+
+<p align="center">
+  <a href="https://itunes.apple.com/br/app/.../...">
+    <img alt="Download on the App Store" src="docs/images/badge.png" width="150px">
+  </a>
+</p>
+
+## Usage
+
+### Getting Started
 
 1. Make sure you define the `ENV` variables below:
 

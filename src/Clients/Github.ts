@@ -4,7 +4,6 @@ import axios, {
   AxiosRequestConfig,
   AxiosResponse,
 } from "axios";
-import { Maybe } from "Monet";
 
 export class GithubClient {
 

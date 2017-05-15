@@ -48,6 +48,8 @@
   * [Client](#client)
   * [Server](#server)
     + [Locally](#locally)
+    + [Deploying](#deploying)
+      - [now.sh](#nowsh)
 
 <!-- tocstop -->
 
@@ -149,12 +151,12 @@ More information on these topics can be found at [Server](#server).
 
     ```sh
     # Pusher credentials
-    export PUSHER_ID='300844'
-    export PUSHER_KEY='5cdc3c711f606f43aada'
-    export PUSHER_SECRET='7bf9214d039b830b3b3c'
+    export PUSHER_ID='123456'
+    export PUSHER_KEY='4JEUi0C2UT49m872Euc5'
+    export PUSHER_SECRET='Bzx2MlrMbNtBpZv391J1'
 
     # GitHub credentials
-    export GITHUB_TOKEN='f039816270db489b0a062b659ff51be6a73cee69'
+    export GITHUB_TOKEN='5K78650K9PGuTHgbVOGl26l9nQ6JuLyS'
 
     # Basic stalkr cell metadata
     export STALKR_TEAM='myTeam'
@@ -186,3 +188,27 @@ More information on these topics can be found at [Server](#server).
     ```
 
 If everything goes okay, it should now be running at [`localhost:3000`](http://localhost:3000).
+
+#### Deploying
+
+##### [now.sh](now.sh)
+
+1. Install *now* globally:
+
+    ```sh
+    # via npm
+    npm install -g now
+    # or using yarn
+    yarn global add now
+    ```
+
+1. Run *now* with the `-e` flag to define these environment variables:
+
+    ```sh
+    now -e PUSHER_ID='123456' \
+           PUSHER_KEY='4JEUi0C2UT49m872Euc5' \
+           PUSHER_SECRET='Bzx2MlrMbNtBpZv391J1' \
+           GITHUB_TOKEN='5K78650K9PGuTHgbVOGl26l9nQ6JuLyS' \
+           STALKR_TEAM='myTeam' \
+           STALKR_PROJECT='myProject'
+    ```

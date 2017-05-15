@@ -41,7 +41,7 @@
 ### Our Product
 
 <p align="center">
-	<img src="docs/images/logo.png" alt="stalkr Logo" width="650px">
+	<img src="docs/images/logo.png" alt="stalkr Logo" width="400px">
 </p>
 
 *stalkr* is a simple–yet powerful–set of tools which gathers data from both continuous integration and application infrastructure monitoring tools in order to make it easier to monitor the whole developing process, in a way the entire team can see at a glance, from the very first commit to the final release.
@@ -93,6 +93,28 @@ It basically discovers all the available *stalkr* plugins in popular back-end re
 Use the *stalkr* **CLI** to quickly bootstrap and deploy your packages right from your terminal.
 
 It basically works as an abstraction layer over commom CLI tools used to get a *stalkr* package up and running.
+
+##### Clients
+
+As stated above, we do intend to have multiple clients to fetch data from your deployed micro services.
+
+###### Smart TVs
+
+<p align="center">
+	<img src="docs/images/screenshot_main.png" alt="stalkr  TV" width="650px">
+</p>
+
+Right now, only the  TV one is available for download at the [App Store]().
+
+##### The Cloud
+
+> Coming soon.
+
+The *stalkr* **Cloud** is *PaaS* which behaves as one our revenue streams and helps your organizing your projects across **organizations**, **teams**, **roles** etc.
+
+**Organizations** are great for creating distinct groups of users within your company, such as divisions or groups working on similar projects.
+
+**Teams** give organizations the ability to create groups of members and control access to projects. Team members can be granted read, write, or admin permissions to specific projects.
 
 ## Usage
 

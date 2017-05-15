@@ -14,7 +14,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "start": "node .",
+    "start": "node ./dist/",
     "build": "node tasks/bundle",
     "watch": "node tasks/bundle --watch",
     "test:spec": "yarn build && mocha --compilers ts:ts-node/register --recursive 'test/**/*-spec.ts'",

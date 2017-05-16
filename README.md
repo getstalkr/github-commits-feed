@@ -141,9 +141,37 @@ More information on these topics can be found at [Server](#server).
 
 ## Usage
 
-### Client
-
 ### Server
+
+#### A Few Technical Notes
+
+##### WebHooks
+
+Webhooks are *user-defined HTTP callbacks* which are usually triggered by some event, such as pushing code to a repository–**which is what happens here**–or a comment being posted to a blog. When that event occurs, the source platform makes an HTTP request to the URI which as been previously set for the webhook.
+
+Users can set them to cause events on one site to invoke behaviour on another. The action taken may be anything. Common uses are to trigger builds with continuous integration systems or to notify bug tracking systems–**and that's how stalkr works**. Since they use HTTP, they can be integrated into web services without adding new infrastructure.
+
+##### [Pusher](pusher.com)
+
+We intend to work over a bunch of different realtime frameworks–e.g. [Socket.IO](https://socket.io/), [Primus](https://github.com/primus/primus) and [ws](https://github.com/websockets/ws)–and services–e.g. [Ably](https://www.ably.io/), [PubNub](https://www.pubnub.com/) and [Pusher](pusher.com) itself–based on a commom protocol for transporters.
+
+But now Pusher has shown to achieve good documentation/examples, a solid API, and great backend/debug tools, which led us to deal, in our *Minimum Viable Product*, only with Pusher.
+
+Then you need to [create an account](https://dashboard.pusher.com/accounts/sign_up), and make a note of your `app_id`, `app_key` and `app_secret` for each project you'd like to integrate with *stalkr*.
+
+##### [GitHub](https://github.com)
+
+Depending on how much `push` events your repo triggers, it can be necessary to add a Github API token:
+
+1. Head on over to your [settings](https://github.com/settings/tokens) to manage personal API tokens.
+
+1. Then clink on `Generate new token`.
+
+1. Put the description which is more expressive for you.
+
+1. Check both `repo` and `user` scopes.
+
+1. Then click on `Generate token`.
 
 #### Locally
 

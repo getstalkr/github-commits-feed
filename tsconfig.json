@@ -6,7 +6,6 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
-    "rootDir": "./src",
     "outDir": "./dist",
     "preserveConstEnums": true,
     "removeComments": true,
@@ -17,7 +16,6 @@
     "src/**/*"
   ],
   "exclude": [
-    "node_modules",
-    "**/*-spec.ts"
+    "node_modules"
   ]
 }

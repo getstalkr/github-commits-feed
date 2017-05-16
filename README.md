@@ -45,11 +45,15 @@
       - [The Cloud](#the-cloud)
       - [PaaS/BaaS/FaaS](#paasbaasfaas)
 - [Usage](#usage)
-  * [Client](#client)
-  * [Server](#server)
+  * [A Few Technical Notes](#a-few-technical-notes)
+    + [WebHooks](#webhooks)
+    + [Pusher](#pusher)
+    + [GitHub](#github)
+  * [Getting Started](#getting-started)
     + [Locally](#locally)
     + [Deploying](#deploying)
       - [now.sh](#nowsh)
+    + [On GitHub](#on-github)
 
 <!-- tocstop -->
 
@@ -141,17 +145,15 @@ More information on these topics can be found at [Server](#server).
 
 ## Usage
 
-### Server
+### A Few Technical Notes
 
-#### A Few Technical Notes
-
-##### WebHooks
+#### WebHooks
 
 Webhooks are *user-defined HTTP callbacks* which are usually triggered by some event, such as pushing code to a repository–**which is what happens here**–or a comment being posted to a blog. When that event occurs, the source platform makes an HTTP request to the URI which as been previously set for the webhook.
 
 Users can set them to cause events on one site to invoke behaviour on another. The action taken may be anything. Common uses are to trigger builds with continuous integration systems or to notify bug tracking systems–**and that's how stalkr works**. Since they use HTTP, they can be integrated into web services without adding new infrastructure.
 
-##### [Pusher](pusher.com)
+#### [Pusher](pusher.com)
 
 We intend to work over a bunch of different realtime frameworks–e.g. [Socket.IO](https://socket.io/), [Primus](https://github.com/primus/primus) and [ws](https://github.com/websockets/ws)–and services–e.g. [Ably](https://www.ably.io/), [PubNub](https://www.pubnub.com/) and [Pusher](pusher.com) itself–based on a commom protocol for transporters.
 
@@ -159,7 +161,7 @@ But now Pusher has shown to achieve good documentation/examples, a solid API, an
 
 Then you need to [create an account](https://dashboard.pusher.com/accounts/sign_up), and make a note of your `app_id`, `app_key` and `app_secret` for each project you'd like to integrate with *stalkr*.
 
-##### [GitHub](https://github.com)
+#### [GitHub](https://github.com)
 
 Depending on how much `push` events your repo triggers, it can be necessary to add a Github API token:
 
@@ -172,6 +174,8 @@ Depending on how much `push` events your repo triggers, it can be necessary to a
 1. Check both `repo` and `user` scopes.
 
 1. Then click on `Generate token`.
+
+### Getting Started
 
 #### Locally
 
@@ -240,6 +244,32 @@ If everything goes okay, it should now be running at [`localhost:3000`](http://l
            STALKR_TEAM='myTeam' \
            STALKR_PROJECT='myProject'
     ```
+
+#### On GitHub
+
+1. Sign in, then select the related repository you own.
+
+1. Click on `Settings` on the top panel.
+
+1. Then click on `Webhooks & Services` on the left panel.
+
+1. Click on the `Add WebHook` Button.
+
+1. Paste the URL where you've deployed your *stalkr* webhook in the `URL` form field.
+
+1. Select `application/json` as the content type.
+
+1. Remain the `Just the push event.` checkbox checked.
+
+1. Remain the `Active` checkbox checked.
+
+1. Click on `Add webhook` to save the webhook.
+
+Your configuration should look similar to this:
+
+<p align="center">
+	<img src="docs/images/github-adding-webhook.png" alt="Github Webhook" width="850px">
+</p>
 
 ---
 

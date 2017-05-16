@@ -1,7 +1,7 @@
 import { IncomingMessage, ServerResponse } from "http";
 import * as PusherInstance from "pusher";
-import { Pusher as PusherCredentials } from "./../Model/Credentials";
-import { Event } from "./../Model/Event";
+import { Pusher as PusherCredentials } from "./../Models/Credentials";
+import { Event } from "./../Models/Event";
 
 export class PusherClient {
 

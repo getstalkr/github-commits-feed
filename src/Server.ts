@@ -1,9 +1,9 @@
 import { IncomingMessage, ServerResponse } from "http";
 import micro, { json, send } from "micro";
-import { GithubClient } from "./Clients/Github";
-import { PusherClient } from "./Clients/Pusher";
-import { Event } from "./Model/Event/";
-import { Commit, User } from "./Model/Event/Github";
+import { GithubClient } from "./Services/Github";
+import { PusherClient } from "./Services/Pusher";
+import { Event } from "./Models/Event/";
+import { Commit, User } from "./Models/Event/Github";
 
 export class Server {
 

@@ -1,4 +1,4 @@
-import { Event } from "./../Model/Event";
+import { Event } from "./../Models/Event";
 export declare class PusherClient {
     private credentials;
     private client;

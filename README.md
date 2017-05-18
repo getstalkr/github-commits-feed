@@ -125,7 +125,19 @@ As stated above, we do intend to have multiple clients to fetch data from your d
 	<img src="docs/images/screenshot_main.png" alt="stalkr  TV" width="650px">
 </p>
 
-Right now, only the  TV one is available for download at the [App Store]().
+Right now, only the  TV one is available for download at the [App Store](https://itunes.apple.com/br/app/stalkr-dashboard/id1214212674), with our *Minimum Viable Product*.
+
+<p align="center">
+	<img src="http://i.imgur.com/4ujnxdN.png" alt="stalkr  TV tab 'New Dashboard'" width="650px">
+</p>
+
+1. Install the Stalkr in your  TV
+
+1. Go to "New Dashboard" tab. We recommend the use of one iPhone or remote keyboard for set a config in inputs.
+
+1. You don't need fill all steps, but only the section "Dashboard" and, in next sections, you need fill only if you want this cell in your dashboard.
+
+1. For to know how to set a "Pusher Key" parameter, see the section [Pusher](#Pusher) in this readme.
 
 ##### The Cloud
 

@@ -139,7 +139,7 @@ The *stalkr* **Cloud** is *PaaS* which behaves as one our revenue streams and he
 
 ##### PaaS/BaaS/FaaS
 
-Those are the services where you any stalkr micro service–such as the one whose documentation you're reading.
+Those are the services where you deploy any stalkr micro service–such as the one whose documentation you're reading.
 
 More information on these topics can be found at [Server](#server).
 

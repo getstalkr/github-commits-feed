@@ -16,7 +16,7 @@ export class Server {
       this.ghClient = new GithubClient();
       this.pusherClient = new PusherClient();
       this.server = micro(
-        async (req: IncomingMessage, res: ServerResponse) => {
+        async (req, res) => {
 
           const { head_commit } = await json(req);
 

@@ -6,16 +6,17 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
-    "outDir": "./dist",
+    "outDir": "dist",
     "preserveConstEnums": true,
     "removeComments": true,
-    "target": "es5",
+    "target": "es6",
     "typeRoots": ["./node_modules/@types"]
   },
   "include": [
     "src/**/*"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "test"
   ]
 }

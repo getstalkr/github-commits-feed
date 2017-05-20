@@ -133,11 +133,11 @@ Right now, only the  TV one is available for download at the [App Store](http
 
 1. Install the Stalkr in your  TV
 
-1. Go to "New Dashboard" tab. We recommend the use of one iPhone or remote keyboard for set a config in inputs.
+1. Go to "New Dashboard" tab. We recommend the use of one iPhone or remote keyboard to set the config in inputs.
 
-1. You don't need fill all steps, but only the section "Dashboard" and, in next sections, you need fill only if you want this cell in your dashboard.
+1. You don't need to fill all the steps, but only the section "Dashboard" and, in the next sections, you'll need to fill only if you want this cell in your dashboard.
 
-1. For to know how to set a "Pusher Key" parameter, see the section [Pusher](#Pusher) in this readme.
+1. In order to know how to set a "Pusher Key" parameter, see the section [Pusher](#Pusher) in this README.
 
 ##### The Cloud
 

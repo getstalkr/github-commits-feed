@@ -1,13 +1,23 @@
 {
-  "name": "@stalkr-io/github",
-  "version": "0.1.0",
-  "description": "Stalkr Github webhook.",
+  "name": "@getstalkr/github-commits-feed",
+  "version": "1.0.0",
+  "description": "@getstalkr micro service which feeds our clients with GitHub push events.",
   "license": "MIT",
-  "repository": {},
-  "author": "matt <@ythecombinator>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getstalkr/github-commits-feed"
+  },
+  "author": "Stalkr Foundation <@getstalkr>",
   "keywords": [
-    ""
+    "apex",
+    "infrastructure",
+    "devops",
+    "monitoring",
+    "stalkr-plugin"
   ],
+  "engines": {
+    "node": "8.0.0"
+  },
   "files": [
     "dist/"
   ],
@@ -55,9 +65,6 @@
     "typescript": "^2.3.2",
     "webpack": "^2.5.1",
     "yargs": "^8.0.1"
-  },
-  "engines": {
-    "node": ">=4.0.0"
   },
   "nyc": {
     "include": [
